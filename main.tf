@@ -8,6 +8,7 @@ terraform {
 }
 
 provider "google" {
+  credentials = file("/home/pawarvaibhav_vppv/.config/gcloud/application_default_credentials.json")
   project = "test-automation-445606"
   region  = "us-central1"
   zone    = "us-central1-c"
